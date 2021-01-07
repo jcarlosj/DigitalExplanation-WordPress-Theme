@@ -20,6 +20,8 @@ class Assets {
     protected function setup_hooks() {
         /** Actions */
 		add_action( 'wp_enqueue_scripts', [ $this, 'storefront_parent_theme_enqueue_styles' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'register_styles' ] );
+        add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
 
     }
 
@@ -31,6 +33,18 @@ class Assets {
 			array( 'storefront-style' )
 		);
 
+	}
+
+	public function register_styles() {
+		/** Register Styles */
+		wp_register_style( 'main', THEME_BUILD_CSS_URI . '/main.css', array( 'bootstrap' ), filemtime( THEME_BUILD_CSS_DIR_PATH .'/main.css' ), 'all' );    //  main.css
+
+		/** Enqueue Styles */
+		wp_enqueue_style( 'main' );
+	}
+
+	public function register_scripts() {
+		wp_enqueue_script( 'main', THEME_BUILD_JS_URI . '/main.js', array( 'jquery' ), filemtime( THEME_BUILD_JS_DIR_PATH .'/main.js' ), true );
 	}
 
 }
