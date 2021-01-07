@@ -39,6 +39,14 @@ body {
 		font-family: inherit;
 		margin: 15px;
 	}
+
+	.site-header,
+	.site-content,
+	.site-footer {
+		max-width: $site-width;
+		margin: 0 auto;
+	}
+
 }
 
 // Gutenberg block quote support.

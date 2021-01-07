@@ -43,7 +43,7 @@ if( ! defined( 'THEME_BUILD_JS_URI' ) ) {
 }
 
 /** Debugging Code */
-// echo '<pre>';   print_r( THEME_DIR_URI ); wp_die();
+// echo '<pre>';   print_r( THEME_BUILD_CSS_URI ); wp_die();
 
 require_once THEME_DIR_PATH. '/inc/helpers/autoloader.php';    //  Incluirá automáticamente todas las clases que definamos
 

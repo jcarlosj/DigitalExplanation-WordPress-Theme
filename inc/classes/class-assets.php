@@ -37,14 +37,14 @@ class Assets {
 
 	public function register_styles() {
 		/** Register Styles */
-		wp_register_style( 'main', THEME_BUILD_CSS_URI . '/main.css', array( 'bootstrap' ), filemtime( THEME_BUILD_CSS_DIR_PATH .'/main.css' ), 'all' );    //  main.css
+		wp_register_style( 'main', THEME_BUILD_CSS_URI . '/main.css', [], filemtime( THEME_BUILD_CSS_DIR_PATH .'/main.css' ), 'all' );    //  main.css
 
 		/** Enqueue Styles */
 		wp_enqueue_style( 'main' );
 	}
 
 	public function register_scripts() {
-		wp_enqueue_script( 'main', THEME_BUILD_JS_URI . '/main.js', array( 'jquery' ), filemtime( THEME_BUILD_JS_DIR_PATH .'/main.js' ), true );
+		wp_enqueue_script( 'main', THEME_BUILD_JS_URI . '/main.js', [], filemtime( THEME_BUILD_JS_DIR_PATH .'/main.js' ), true );
 	}
 
 }
