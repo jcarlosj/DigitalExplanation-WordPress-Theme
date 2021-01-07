@@ -25,6 +25,7 @@ if( ! defined( 'THEME_DIR_PATH' ) ) {
 if( ! defined( 'THEME_DIR_URI' ) ) {
     define( 'THEME_DIR_URI', $child_theme_dir_uri );
 }
+
 /** PATHs & URIs de archivos CSS */
 if( ! defined( 'THEME_BUILD_CSS_DIR_PATH' ) ) {
     define( 'THEME_BUILD_CSS_DIR_PATH', $child_theme_dir_path. '/assets/build/css' );
@@ -32,6 +33,7 @@ if( ! defined( 'THEME_BUILD_CSS_DIR_PATH' ) ) {
 if( ! defined( 'THEME_BUILD_CSS_URI' ) ) {
     define( 'THEME_BUILD_CSS_URI', $child_theme_dir_uri. '/assets/build/css' );
 }
+
 /** PATHs & URIs de archivos JavaScript */
 if( ! defined( 'THEME_BUILD_JS_DIR_PATH' ) ) {
     define( 'THEME_BUILD_JS_DIR_PATH', $child_theme_dir_path. '/assets/build/js' );
