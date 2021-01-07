@@ -1,6 +1,6 @@
 <?php
 /** Boostraps the Theme
- * @package Aquila
+ * @package DigitalExplanation
  */
 
 namespace THEME\Inc;

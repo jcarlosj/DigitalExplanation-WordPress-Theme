@@ -1,6 +1,6 @@
 <?php
-/** Enqueue Theme Assets
- * @package Aquila
+/** Enqueue Theme Hooks
+ * @package DigitalExplanation
  */
 
 namespace THEME\Inc;

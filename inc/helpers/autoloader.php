@@ -1,6 +1,6 @@
 <?php
 /** Autoloader for Theme.
- * @package Aquila
+ * @package DigitalExplanation
  */
 
 namespace THEME\Inc\Helpers;
