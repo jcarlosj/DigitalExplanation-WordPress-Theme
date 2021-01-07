@@ -52,19 +52,3 @@ function digitalexplanation_get_theme_instance() {
 }
 
 digitalexplanation_get_theme_instance();
-
-
-// function notification_bar_function(){
-
-// 	$template_path = 'template-parts/notification-bar';
-
-// 	ob_start();         //  Activa el almacenamiento en búfer de la salida
-
-// 	get_template_part( $template_path );
-// 	$template_content = ob_get_contents();     //  Devuelve contenido del búfer de salida
-
-// 	ob_end_clean();     //  Limpiar (eliminar) el búfer de salida
-
-//     echo $template_content;
-// }
-// add_action( 'storefront_header', 'notification_bar_function' );		//	Engancha función a una acción específica

@@ -1,0 +1,22 @@
+.btn {
+	border-radius: $btn-border-radius;
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+	padding: 8px 10px;
+	position: relative;
+	text-transform: uppercase;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.btn-primary {
+	background-color: $bg-color-btn-primary;
+	border: 2px solid $border-color-btn-primary-hover;
+	color: $color-btn-primary;
+}
+
+.btn-primary:hover {
+	background-color: $bg-color-btn-primary-hover;
+	border: 2px solid $border-color-btn-primary-hover;
+	color: $color-btn-primary-hover;
+}

@@ -14,7 +14,9 @@ class Theme {
 		// wp_die( 'THEME!' );
 
 		//  Cargamos Clases.
-        Assets :: get_instance();
+		Assets :: get_instance();
+		Hooks :: get_instance();
+
 	}
 
 }

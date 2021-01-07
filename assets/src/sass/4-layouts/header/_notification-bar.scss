@@ -1,0 +1,21 @@
+.notification {
+
+	&-bar {
+
+		display: flex;
+		justify-content: space-between;
+		padding: .5rem 0;
+
+		p {
+			margin: auto;
+			padding: 8px 10px;
+		}
+
+	}
+
+	&-message {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
