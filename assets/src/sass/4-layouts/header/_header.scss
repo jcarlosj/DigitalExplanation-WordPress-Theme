@@ -1,0 +1,11 @@
+@import "nav/navigation";
+@import "notification-bar";
+
+.site-header {
+
+	& > div {
+		border: 1px dotted blue;
+		box-sizing: border-box;
+	}
+
+}
