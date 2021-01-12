@@ -14,12 +14,18 @@ class Hooks {
         // wp_die( 'Class Hooks' );
 
         //  Cargamos Clases.
-        $this -> setup_hooks();
+		$this -> setup_hooks();
+		$this -> setup_hooks_storefront();
     }
 
     protected function setup_hooks() {
         /** Actions */
-		add_action( 'storefront_header', [ $this, 'notification_bar' ] );		//	Engancha función a una acción específica
+		//add_action( 'storefront_header', [ $this, 'notification_bar' ] );		//	Engancha función a una acción específica
+	}
+
+	protected function setup_hooks_storefront() {
+		add_action( 'storefront_header', [ $this, 'change_position_product_search' ] );
+		add_action( 'storefront_header', [ $this, 'change_position_header_card' ] );
 	}
 
 	public function notification_bar(){
@@ -34,6 +40,17 @@ class Hooks {
 		ob_end_clean();     //  Limpiar (eliminar) el búfer de salida
 
 		echo $template_content;
+	}
+
+	public function change_position_product_search() {
+		remove_action( 'storefront_header', 'storefront_product_search', 40);
+		add_action( 'storefront_header', 'storefront_product_search', 39 );
+
+	}
+
+	public function change_position_header_card() {
+		remove_action( 'storefront_header', 'storefront_header_cart', 60);
+		add_action( 'storefront_header', 'storefront_header_cart', 40);
 	}
 
 }

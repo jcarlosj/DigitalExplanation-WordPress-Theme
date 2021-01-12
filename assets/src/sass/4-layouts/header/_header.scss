@@ -3,6 +3,36 @@
 
 .site-header {
 
+	& > div:first-child {
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 1rem;
+
+		div, ul {
+			border: 1px dotted black;
+			box-sizing: border-box;
+		}
+
+		.site-branding {
+			float: none;
+			margin: 0;
+			width: auto;
+		}
+
+		.site-search {
+			flex-grow: 2;
+			float: none;
+			margin: 0;
+			width: auto;
+		}
+
+		.site-header-cart .cart-contents {
+			padding: 1.618em 0;
+		}
+	}
+
 	& > div {
 		border: 1px dotted blue;
 		box-sizing: border-box;
